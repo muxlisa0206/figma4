@@ -137,6 +137,53 @@ header{
     }
 }
 
+.statistic{
+   text-align: center;
+    box-shadow: 5px 5px 20px grey;
+    border-radius: 20px;
+
+    padding: 60px 100px;
+    color: #08546C;
+    /* margin-top: -150px;
+    background-color: white; */
+}
+.statistic h1{
+    font-size: 24px;
+    font-weight: 600px;
+    font-family: sans-serif;
+}
+
+.statistikalar{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 50px;
+}
+.statistika{
+    width: 150px;
+}
+.statistika h4{
+    font-size: 48px;
+    color: #08546C;
+    font-weight: 600px;
+    font-family: sans-serif;
+}
+.statistika p{
+    font-size: 18px;
+    color: #08546C;
+}
+
+@media (max-width:885px) {
+    .statistikalar{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media (max-width:515px) {
+    .statistikalar{
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
 .service{
     text-align: center;
     padding: 50px 5px;
@@ -164,6 +211,11 @@ header{
     justify-content: center;
     gap: 20px;
 }
+.service-box:hover{
+    background-color: #08546C;
+    color: white;
+}
+
 .service-box{
     max-width: 200px;
     height: 190px;
@@ -185,10 +237,6 @@ header{
     font-size: 13px;
     color: #696969;
 }
-.second-box{
-    background-color: #08546C;
-    color: white;
-}
 
 @media (max-width:789px) {
     .service .service-boxes{
@@ -198,5 +246,159 @@ header{
 @media (max-width:480px) {
     .service .service-boxes{
         grid-template-columns: repeat(1, auto);
+    }
+}
+
+.portfolio{
+    text-align: center;
+    padding-top: 60px;
+}
+.portfolio h1{
+    font-size: 45px;
+    color: #08546C;
+}
+.portfolio p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #757575;
+}
+.portfoliyalar{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+.portfoliya{
+    max-width: 515px;
+    height: 588px;
+    text-align: left;
+}
+.portfolio-img{
+    width: 515px;
+}
+.portfoliya h2{
+    font-size: 30px;
+    color: #08546C;
+    margin-top: 30px;
+}
+.portfoliya p{
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.portfoliya a{
+    font-size: 18px;
+    color: #08546C;
+}
+.portfoliya a:hover{
+    color: #FFA800;
+}
+
+@media (max-width:1100px) {
+    .portfoliyalar{
+        grid-template-columns: repeat(1,auto);
+        justify-content: center;
+    }
+    
+}
+@media (max-width:550px) {
+    .portfolio-img{
+        width: 305px;
+        width: 100%;
+    }
+}
+
+.blog-desc{
+    max-width: 585px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 50px;
+    height: 600px;
+    align-items: center;
+    padding: 0 20px;
+}
+.blog-img{
+    max-width: 500px;
+}
+.fst{
+    font-size: 20px;
+    color: #FFFF;
+    line-height: 26px;
+}
+.second{
+    font-size: 18px;
+    color: #AABFC6;
+    margin-top: 20px;
+}
+@media (max-width: 885px) {
+    .blog{
+        height: 800px;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+    }
+}
+@media (max-width: 530px) {
+    .blog-img{
+        width: 350px;
+        width: 100%;
+    }
+}
+
+.footer{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 50px;
+}
+.footer-logo{
+    max-width: 344px;
+    margin-top: 50px;
+}
+.footer-logo p{
+    font-size: 18px;
+    margin-top: 30px;
+    color: #757575;
+}
+.images{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.pages h1, .service h1, .contact h1{
+    font-size: 24px;
+    color: #08546C;
+}
+.pages, .contact{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pages a, .service a, .contact a{
+    color: #787878;
+    font-size: 18px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width:865px) {
+    .footer{
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+    }
+}
+
+@media (max-width:560px) {
+    .footer{
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
     }
 }
