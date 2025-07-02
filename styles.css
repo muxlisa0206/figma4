@@ -70,6 +70,7 @@ header{
     display: flex;
     gap: 30px;
     padding: 50px;
+    padding-bottom: 300px;
 }
 .hero-desc{
     max-width: 537px;
@@ -138,14 +139,14 @@ header{
 }
 
 .statistic{
-   text-align: center;
+    text-align: center;
     box-shadow: 5px 5px 20px grey;
     border-radius: 20px;
 
     padding: 60px 100px;
     color: #08546C;
-    /* margin-top: -150px;
-    background-color: white; */
+    margin-top: -150px;
+    background-color: white;
 }
 .statistic h1{
     font-size: 24px;
@@ -176,11 +177,13 @@ header{
 @media (max-width:885px) {
     .statistikalar{
         grid-template-columns: repeat(2, auto);
+        justify-content: center;
     }
 }
 @media (max-width:515px) {
     .statistikalar{
         grid-template-columns: repeat(1, auto);
+        justify-content: center;
     }
 }
 
@@ -196,9 +199,6 @@ header{
     text-decoration: underline;
 }
 .service-title{
-    /* display: flex;
-    justify-content: center;
-    max-width: 510px; */
     font-size: 30px;
     color: #08546C;
     margin-top: 20px;
@@ -369,36 +369,31 @@ header{
     gap: 10px;
 }
 
-.pages h1, .service h1, .contact h1{
+.pages h1, .service-2 h1, .contact h1{
     font-size: 24px;
     color: #08546C;
 }
-.pages, .contact{
+.pages, .contact, .service-2{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.pages a, .service a, .contact a{
+.pages a, .service-2 a, .contact a{
     color: #787878;
     font-size: 18px;
-}
-.service{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 @media (max-width:865px) {
     .footer{
         grid-template-columns: repeat(2, auto);
-        justify-content: center;
+        text-align: center;
     }
 }
 
 @media (max-width:560px) {
     .footer{
         grid-template-columns: repeat(1, auto);
-        justify-content: center;
+        text-align: center;
     }
 }
